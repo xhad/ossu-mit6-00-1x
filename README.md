@@ -1,7 +1,7 @@
 # MIT 6.00.1x
 ## Introduction to Computer Science with Python
 ---
-1. Week One
+### Week One
 
 **Branching Programs**
 
@@ -62,9 +62,9 @@ elif varA < varB:
 ```
 
 ---
-2. Week Two
+### Week Two
 
-** Iteration
+**Iteration**
 
   - start with a test
   - if True, execute loop body once, and go back to reeval
