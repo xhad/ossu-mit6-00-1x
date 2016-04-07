@@ -1,7 +1,7 @@
 # MIT 6.00.1x
 ## Introduction to Computer Science with Python
 ---
-1. Week 1
+1. Week One
 
 **Branching Programs**
 
@@ -33,7 +33,7 @@ if x%2 == 0:
     print('Divisible by 2 and not by 3')
 elif x%3 == 0:
   print('Divisible by 3 and not by 2')
-
+```
 
 Compound Booleans
 
@@ -44,3 +44,40 @@ elif y < z:
   print('y is least')
 else :
   print('z is least')
+```
+
+Check for string
+
+```Python
+varA = 'test'
+varB = 0
+if type(varA) == str or type(varB) == str:
+    print('string involved')
+elif varA > varB:
+    print ('bigger')
+elif varA == varB:
+    print ('equal')
+elif varA < varB:
+    print ('smaller')
+```
+
+---
+2. Week Two
+
+** Iteration
+
+  - start with a test
+  - if True, execute loop body once, and go back to reeval
+  - Repeat until test evals False to finish computation
+
+  ```Python
+  x = 3
+  ans = 0
+  itersLeft = x
+  while (itersLeft != 0):
+    ans = ans + x
+    itersLeft = itersLeft - 1
+  print (str(x) + '*' + str(x) + '=' + str(ans))
+  ```
+
+  This code squares the value of x by repetitive addition.
