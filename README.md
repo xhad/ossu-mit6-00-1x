@@ -43,4 +43,4 @@ if x < y and x < z:
 elif y < z:
   print('y is least')
 else :
-  print('x is least')
+  print('z is least')
