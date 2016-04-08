@@ -201,10 +201,10 @@ for turn in range(p):
 
 **Understanding Variable Binding**
 
-• Each	function	call	creates	a	new	environment,
+- Each	function	call	creates	a	new	environment,
 which	scopes	bindings	of	formal	parameters
 and	values,	and	of	local	variables	(those
 created	with	assignments	within	body)
-• Scoping	often	called	static	or	lexical	because
+- Scoping	often	called	static	or	lexical	because
 scope	within	which	variable	has	value	is
 defined	by	extent	of	code	boundaries
