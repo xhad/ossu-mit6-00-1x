@@ -136,3 +136,75 @@ elif varA < varB:
 
     - Guess and check methods can work on problems with a finite number of possibilities
     - Exhaustive enumeration is a good way to generate guesses in an organized manner
+**Lecture 4**
+
+###Creating Functions
+Capturing computation as a function
+- idea is to encapsulate this computations within a scope such that can treat as primitive
+  ~ use by simply calling name, and providing input
+  ~ internal details hidden from users (blackbox)
+- syntax
+```Python
+def <function name> (<formal parameters>)
+  <function body>
+```
+  - **def** is a keyword
+  - Name is any legal python name
+  - Within parenthesis are zero or more formal parameters
+    ~ each is a variable name to be used inside a function body
+
+**Turing Complete**
+
+####Anything that is computable can be done with software language
+
+- but code lacks abstraction
+- can't use same code in other places
+- functions allow abstraction
+
+```python
+if x > y:
+  z = x
+else:
+  z = y
+```
+
+- encapsulate this computation within a scope and use it as a primitive
+
+```python
+def max (x, y):
+  if x > y:s
+    return y
+  else:
+    return x
+```
+
+1. expressions for each parameters are evaluated, bound to formal parameters as the name of a function
+2. control transfers to first expression in body of function
+3. body expressions executed until return keyword reached ( returning value of next expression ) or run out of expressions (returning None)
+4. Invocations is bound to the returned value
+
+**Environments**
+
+- formalism for tracking bindings of variables and values
+- Assignments pair name and values in environment
+- asking for value of name just looks up in current environment
+- python shell is default (or global) environment
+- definitions pair function name with details of function
+
+```Python
+x = 5
+p = 3
+for turn in range(p):
+  print('iteration: ' + str(turn) + 'current result: ' + str(result))
+  result = result * x
+```
+
+**Understanding Variable Binding**
+
+• Each	function	call	creates	a	new	environment,
+which	scopes	bindings	of	formal	parameters
+and	values,	and	of	local	variables	(those
+created	with	assignments	within	body)
+• Scoping	often	called	static	or	lexical	because
+scope	within	which	variable	has	value	is
+defined	by	extent	of	code	boundaries
