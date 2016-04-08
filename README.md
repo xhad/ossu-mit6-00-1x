@@ -95,12 +95,44 @@ elif varA < varB:
 
   **Finding a cube root of an integer**
   ```Python
-  x = int(raw_input('Enter an integer'))
+  x = int(raw_input('Enter an integer: '))
   ans = 0
   while ans**3 < x:
-    ans = ans + 1
+      ans = ans + 1
   if ans **3 !=x:
-    print(str(x) + 'is not a perfect cube')
+      print(str(x) + ' is not a perfect cube')
   else:
-    if x < 0
-    print('Cube root of ' + str(x) '=' + str(ans)
+      print('Cube root of ' + str(x) + ' = ' + str(ans))
+```
+  - only works for positive integers
+  - look for positive classes
+
+  ```Python
+  x = int(raw_input('Enter and integer: '))
+  ans = 0
+  while ans**3 < abs(x):
+    ans = ans + 1
+  if ans**3 != abs(x):
+    print(str(x) + ' is not a perfect cube')
+  else:
+    if x < 0:
+      ans = - ans
+    print('Cube root of ' + str(x) + ' is ' + str(ans))
+    ```
+    **Loop Characteristics**
+
+    - Need loop variable
+      ~ initialized outside of Loop
+      ~ Changes within Loop
+      ~ Test for termination depends on variable
+    - Useful to think about a **decrementing function**
+      ~ Maps set of program variables into an integer
+      ~ when loop is entered, value is non-negative
+      ~ When value is <=0, loop terminates, and
+      ~ Value is decreased every time through loop
+    - Here we use abs(x) - ans**3
+
+    **Exhaustive enumeration**
+
+    - Guess and check methods can work on problems with a finite number of possibilities
+    - Exhaustive enumeration is a good way to generate guesses in an organized manner
