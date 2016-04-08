@@ -62,7 +62,9 @@ elif varA < varB:
 ```
 
 ---
-### Week Two
+###Week Two
+
+####Lecture 3
 
 **Iteration**
 
@@ -81,3 +83,24 @@ elif varA < varB:
   ```
 
   This code squares the value of x by repetitive addition.
+
+####Lecture 4
+
+**Classes of Algorithms**
+
+  - Iterative Algorithms allow us to more complex things than simple arithmetic
+  - We can repeat a sequence of steps multiple times based on some decision; leads to new classes of algorithms
+
+  1. Guess and Check
+
+  **Finding a cube root of an integer**
+  ```Python
+  x = int(raw_input('Enter an integer'))
+  ans = 0
+  while ans**3 < x:
+    ans = ans + 1
+  if ans **3 !=x:
+    print(str(x) + 'is not a perfect cube')
+  else:
+    if x < 0
+    print('Cube root of ' + str(x) '=' + str(ans)
